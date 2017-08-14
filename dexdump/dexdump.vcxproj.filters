@@ -24,12 +24,48 @@
     <ClCompile Include="adler32.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DexFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DexClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leb128.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DexProto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DexOpcodes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InstrUtils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TypeDefs.h">
       <Filter>源文件</Filter>
     </ClInclude>
     <ClInclude Include="adler32.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DexFile.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DexClass.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Leb128.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DexProto.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InstrUtils.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DexOpcodes.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>

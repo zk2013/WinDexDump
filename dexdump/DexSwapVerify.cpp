@@ -1,5 +1,14 @@
 #include "TypeDefs.h"
 
+void dexDataMapFree(DexDataMap* map) {
+	/*
+	* Since everything got allocated together, everything can be freed
+	* in one fell swoop. Also, free(NULL) is a nop (per spec), so we
+	* don't have to worry about an explicit test for that.
+	*/
+	free(map);
+}
+
 bool dexHasValidMagic(const DexHeader* pHeader)
 {
 	const u1* magic = pHeader->magic;

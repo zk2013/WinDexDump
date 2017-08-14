@@ -4,6 +4,7 @@
 #include<assert.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 # define SWAP2(_value)      (_value)
 # define SWAP4(_value)      (_value)
@@ -13,6 +14,11 @@ typedef unsigned char u1;
 typedef unsigned int u4;
 typedef unsigned short u2;
 typedef unsigned long uLong;
+typedef unsigned long long u8;
+typedef int s4;
+typedef long long s8;
+typedef short s2;
+typedef char s1;
 
 #include "DexFile.h"
 
@@ -50,6 +56,8 @@ struct DexDataMap {
 	u4* offsets; /* array of item offsets */
 	u2* types;   /* corresponding array of item types */
 };
+
+void dexDataMapFree(DexDataMap* map);
 
 struct CheckState {
 	const DexHeader*  pHeader;

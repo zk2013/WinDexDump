@@ -978,4 +978,6 @@ const char* dexGetBoxedTypeDescriptor(PrimitiveType type);
  */
 PrimitiveType dexGetPrimitiveTypeFromDescriptorChar(char descriptorChar);
 
+bool dexParseOptData(const u1* data, size_t length, DexFile* pDexFile);
+
 #endif  // LIBDEX_DEXFILE_H_
